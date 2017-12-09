@@ -1,0 +1,12 @@
+{
+  "name": "challenge_dictionary",
+  "version": "0.0.1",
+  "description": "This is a single-JS-file Node JS project that parses a .txt file to create a searchable online dictionary website/app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jack Lee",
+  "license": "ISC"
+}
