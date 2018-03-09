@@ -8,7 +8,6 @@ I employed node's 'fs'/File System to read a .txt file to look for matches with 
 Do some searches yourself on the deployment to Heroku:
 https://chilis-dictionary.herokuapp.com/?word=emerge
 
-![Dictionary App Screen Capture Home](dictionary_home.jpg)
 ![Dictionary App Screen Capture Word Emerge](dictionary_emerge.jpg)
 
 ## Reflection
