@@ -36,7 +36,7 @@ const server = http.createServer((request, response) => {
                     <head>
                     <body>
                       <nav class="navbar navbar-dark bg-primary bg-dark">
-                        <a class="navbar-brand ml-5" href="/">My Dictionary App</a>
+                        <a class="navbar-brand ml-5" href="/">Chili's Dictionary</a>
                         <form action="/" method="get" class="form-inline">
                           <input class="form-control" name="word" type="search" placeholder="Search">
                           <button class="btn btn-outline-warning m-2 mr-5" type="submit">Search</button>
@@ -51,8 +51,15 @@ const server = http.createServer((request, response) => {
       return `<h1>${params.word}</h1>
               <p>${generator(params.word)}</p>`;
     } else if (!params.word) {
-      return `<h1>Read Me</h1>
-              <p>This is a single-page dictionary project done strictly with node.</p>`;
+      return `<h1>Welcome to Chili's Dictionary</h1>
+              <p>This is a single-page dictionary project done strictly with node. I employed node's 'fs'/File System to read a .txt file to look for matches with the user's search query.</p>
+              <h3>Reflection</h3>
+              <p>This was the first complete web app that I created, and the first app I deployed to Heroku. I was amazed at how powerful yet minimalist Node and javascript can be.</p>
+              <h3>Author</h3>
+              <p>Jack Lee</p>
+              <p>Portfolio: <a href="http://www.jackclee.com" target="_blank">www.jackclee.com</a><br />
+              Github: <a href="https://www.github.com/chilidoggca" target="_blank">https://www.github.com/chilidoggca</a><br />
+              Linked In: <a href="https://www.linkedin.com/in/jackclee" target="_blank">https://www.linkedin.com/in/jackclee</a><br /></p>`;
     }
   }
 
